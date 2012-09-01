@@ -9,7 +9,7 @@ LOCAL_SRC_FILES := \
 	yaffs2/yaffs_ecc.c \
 	yaffs2/yaffs_tagsvalidity.c
 
-LOCAL_CFLAGS =   -O2 -Wall -DCONFIG_YAFFS_UTIL -DCONFIG_YAFFS_DOES_ECC
+LOCAL_CFLAGS =   -O2 -Wall -DCONFIG_YAFFS_UTIL
 LOCAL_CFLAGS+=   -Wshadow -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-declarations
 LOCAL_CFLAGS+=   -Wmissing-prototypes -Wredundant-decls -Wnested-externs -Winline
 

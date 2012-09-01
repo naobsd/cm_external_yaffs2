@@ -73,9 +73,9 @@ static int outFile;
 
 static int error;
 
-#ifdef HAVE_BIG_ENDIAN
+#if __BYTE_ORDER == __BIG_ENDIAN
 static int convert_endian = 1;
-#elif defined(HAVE_LITTLE_ENDIAN)
+#elif __BYTE_ORDER == __LITTLE_ENDIAN
 static int convert_endian = 0;
 #endif
 
